@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       jwt = Auth.issue({user: user.id})
       render json: {jwt: jwt}
     else
-
+      render json: {error: 'fuck'}
     end
   end
 
