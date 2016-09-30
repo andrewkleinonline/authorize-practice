@@ -11,8 +11,12 @@ class LogIn extends React.Component {
 
   submitLogIn(event) {
     event.preventDefault();
-    this.props.actions.logIn({auth: {username: this.refs.username.value, 
-                              password: this.refs.password.value}})
+    this.props.actions.logIn({
+                                auth: {
+                                  username: this.refs.username.value, 
+                                  password: this.refs.password.value
+                                }
+                             })
   }
 
   render() {
