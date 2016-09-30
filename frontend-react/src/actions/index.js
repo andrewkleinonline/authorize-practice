@@ -7,8 +7,10 @@ export function logIn(userCreds) {
     }, 
     body: JSON.stringify(userCreds)
   }).then(response => {
+    debugger;
     return response.json()
   }).then(jwtTokenFromPayload => {
+    debugger;
     return jwtTokenFromPayload
   })
 
