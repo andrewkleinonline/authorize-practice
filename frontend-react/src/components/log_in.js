@@ -17,14 +17,15 @@ class LogIn extends React.Component {
 
   render() {
     return (
-    <form onSubmit={this.submitLogIn}>
-      <label>username</label>
-      <input type="text" ref="username"/>
-      <label>password</label>
-      <input type="password" ref="password"/>
-      <input type="submit"/>
-    </form>
-  )
+      <form onSubmit={this.submitLogIn}>
+        <h1>DO IT WORK</h1>
+        <label>username</label>
+        <input type="text" ref="username"/>
+        <label>password</label>
+        <input type="password" ref="password"/>
+        <input type="submit"/>
+      </form>
+    )
   }
 }
 
