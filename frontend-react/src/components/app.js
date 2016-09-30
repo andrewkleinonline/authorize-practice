@@ -9,6 +9,7 @@ export default (props) => {
         <div className='container'>
           <Link to="/login">Login</Link>
         </div>
+        {props.children}
       </div>
     )
 };
